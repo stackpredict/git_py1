@@ -1,0 +1,456 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin-top: 10px;
+}
+
+body {
+  background: #fff;
+  font-family: "lato";
+  font-size: 16px;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  overflow: hidden;
+  margin: auto;
+}
+/* Estilos Navegación*/
+.navbar-brand img {
+  width: 45px;
+  height: 40px;
+}
+.navbar-nav :hover {
+  background: rgb(140, 168, 204);
+}
+
+header {
+  background-image: url("../img/portada.jpg");
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: cover;
+}
+
+header .contenido-header {
+  margin: 120px 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+header .contenido-header .titulo-header {
+  font-size: 120px;
+  text-align: center;
+  color: #fff;
+  text-align: center;
+}
+
+header .contenido-header .linea-header {
+  width: 700px;
+  margin: auto;
+  height: 2px;
+  background: #15a4fa;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+header .contenido-header .texto-header {
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+header .contenido-header .action-header {
+  display: inline-block;
+  margin: auto;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #15a4fa;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+header .contenido-header .action-header:hover {
+  background: #15a4fa;
+  color: #fff;
+}
+
+main .quienes {
+  background: #f0f3f5;
+  padding: 60px 0;
+}
+
+main .quienes .quienes-titulo {
+  color: #000;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+main .quienes .quienes-parrafo {
+  text-align: center;
+  color: #999999;
+  font-weight: 600;
+}
+
+main .quehacemos {
+  margin: 60px 0;
+}
+main .contenido-cajas {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+main .quehacemos .contenido-cajas .tarjeta {
+  width: 30%;
+  text-align: center;
+}
+
+main .quehacemos .contenido-cajas .tarjeta .contenido-tarjeta .titulo-tarjeta {
+  margin: 10px 0;
+}
+
+main .portafolio {
+  background: #f0f3f5;
+  padding: 60px 0;
+}
+
+main .portafolio .portafolio-textos {
+  text-align: center;
+  margin-bottom: 60px;
+  color: #2d3950;
+  font-size: 20px;
+}
+
+main .portafolio .portafolio-textos p {
+  color: #909090;
+  font-size: 15px;
+  margin: 20px 0 0 0;
+}
+
+main .portafolio .galeria {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+main .portafolio .galeria .fotos {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+main .portafolio .galeria .fotos img {
+  width: 100%;
+  height: 210px;
+  border-radius: 5px;
+}
+main .portafolio .galeria .fotos img:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+/* Estilos Footer */
+
+footer .contacto {
+  height: 600px;
+  background-image: url(../img/footer_1.jpg);
+  background-position: center;
+  padding: 60px 0;
+}
+
+footer .footer-textos {
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+}
+
+footer .footer-textos p {
+  font-size: 14px;
+  margin: 15px 0 30px 0;
+  color: #999999;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 70%;
+}
+footer .contacto input[type="text"],
+footer .contacto input[type="email"],
+footer .contacto textarea {
+  width: 100%;
+  margin: 5px 0;
+  padding: 15px 20px;
+  background: none;
+  border-radius: 5px;
+  color: rgb(204, 204, 204);
+  border: 2px solid rgba(204, 204, 204, 0.383);
+  font-family: "lato";
+  font-weight: 300;
+}
+
+footer .contacto textarea {
+  height: 150px;
+  max-height: 150px;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 150px;
+}
+.derecha {
+  display: flex;
+  justify-content: flex-end;
+}
+footer .contacto input[type="submit"] {
+  display: block;
+  width: 100px;
+  margin: 10px 0;
+  padding: 10px 15px;
+  background: none;
+  border: 1px solid #15a4fa;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  float: right;
+}
+footer .contacto input[type="submit"]:hover {
+  background: #15a4fa;
+  color: #fff;
+}
+
+.footer {
+  height: 200px;
+  background: #000;
+}
+/* Estilos seccion sucribirse  GRID*/
+
+.fas {
+  font-size: 1.2em;
+}
+.hero {
+  height: 83vh;
+  background-image: linear-gradient(
+      rgba(16, 16, 16, 0.8),
+      rgba(16, 16, 16, 0.9)
+    ),
+    url(../img/portada_1.jpg);
+  background-size: cover;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  position: relative;
+}
+.hero .info-content {
+  grid-column: 7 / 10;
+  grid-row: 3 / 7;
+  color: #fff;
+  z-index: 1;
+}
+.hero .info-content h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8em;
+}
+.hero .info-content h1 {
+  font-weight: 900;
+  font-size: 5em;
+  color: #d62828;
+}
+.hero .info-content p {
+  font-family: "Montserrat", sans-serif;
+}
+.hero .info-content .btn {
+  font-size: 1em;
+  color: #fff;
+  background: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px solid#EDCB54;
+  margin-top: 10px;
+}
+.hero .info-content .btn:hover {
+  background-color: #d62828;
+  color: #181818;
+}
+.radio-section {
+  display: grid;
+  height: 80px;
+  align-items: center;
+  background: rgb(1, 0, 13);
+  background: linear-gradient(
+    90deg,
+    rgba(1, 0, 13, 1) 5%,
+    rgba(7, 7, 75, 0.9640231092436975) 26%,
+    rgba(4, 4, 46, 1) 31%,
+    rgba(8, 9, 99, 1) 49%,
+    rgba(1, 11, 29, 1) 77%,
+    rgba(2, 10, 32, 1) 99%
+  );
+  color: #fff;
+  grid-template-areas: "listen-online follow-me social-network";
+}
+.radio-section .listen-online {
+  grid-template-areas: listen-online;
+  display: flex;
+  justify-content: center;
+  background: rgb(29, 22, 147);
+  background: linear-gradient(
+    90deg,
+    rgba(29, 22, 147, 1) 2%,
+    rgba(11, 11, 125, 0.9640231092436975) 26%,
+    rgba(8, 9, 99, 1) 49%,
+    rgba(1, 11, 29, 1) 77%,
+    rgba(2, 10, 32, 1) 99%
+  );
+
+  color: white;
+  padding: 26px;
+  height: 80px;
+}
+.radio-section .listen-online .fas {
+  margin-right: 15px;
+  font-size: 1.5em;
+}
+.radio-section h2 {
+  grid-template-areas: follow-me;
+  text-align: center;
+}
+.radio-section .social-network {
+  grid-template-areas: social-network;
+}
+.radio-section .social-network .fab {
+  font-size: 1.4em;
+  color: #3a86ff;
+  margin-right: 15px;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero .info-content {
+    z-index: 0;
+    grid-column: 2 / 9;
+    grid-row: 5 / 7;
+  }
+  .hero .info-content h1 {
+    font-size: 3.5em;
+    color: #3a86ff;
+  }
+  .hero .info-content h3 {
+    font-size: 1em;
+  }
+  .radio-section {
+    grid-template-areas: "listen-online social-network";
+  }
+  .radio-section h2 {
+    display: none;
+  }
+  .radio-section .social-network {
+    margin: 0 auto;
+  }
+  .radio-section .social-network .fab {
+    color: #3a86ff;
+  }
+}
+/*optimizando para diferentes dispositivos*/
+
+@media screen and (max-width: 760px) {
+  cabeza .carta {
+    justify-content: center;
+  }
+  cabeza .contenido-header .texto-header {
+    font-size: 18px;
+  }
+  cabeza .contenido-header .texto-header .desaparecer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  cabeza .contenido-header .titulo-header {
+    font-size: 80px;
+  }
+  cabeza .contenido-header .linea-header {
+    width: 400px;
+  }
+  main .portafolio .galeria .fotos {
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  cabeza .contenido-header .titulo-header {
+    font-size: 40px;
+  }
+  main .quehacemos .contenido-cajas .tarjeta {
+    width: 48%;
+  }
+  main .contenido-cajas {
+    justify-content: center;
+  }
+  main .quehacemos .contenido-cajas .tarjeta {
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  main .quehacemos .contenido-cajas .tarjeta {
+    width: 98%;
+  }
+  cabeza .contenido-header .texto-header {
+    font-size: 15px;
+  }
+}
+/*Transiciones redes Sociales*/
+.transic {
+  transition: all 2s;
+}
+.transic:hover {
+  height: 200px;
+  width: 400px;
+}
+/*Transformacion Rotacion Redes Sociales e Imágenes*/
+.rotar {
+  background-color: none;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+.rotar:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+/*Transformación Scale en Imágenes*/
+.scale {
+  background-color: #c0392b;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+.scale:hover {
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+}
+/*Animaciones*/
+.anima {
+  animation-name: efectazo;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.8, 0.63);
+  animation-duration: 7s;
+  animation-delay: 0s;
+  border-radius: 50%;
+  color: #d62828;
+}
+/*Linea de Tiempo, los cambios se miden en % */
+@keyframes efectazo {
+  0% /*Inicio*/ {
+  }
+  100% /*Final*/ {
+    transform: translateX(50%);
+    background-color: none;
+  }
+}
