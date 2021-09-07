@@ -1,0 +1,4 @@
+#esto ignora la carpeta node_modules
+node_modules/
+#ignora la imagen portada_2jpg
+img/portada_2.jpg
