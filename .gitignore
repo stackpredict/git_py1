@@ -1,0 +1,4 @@
+# esto ignora toda la carpeta node_modules
+node_modules/
+wireframes_prototipos/
+.DS_Store

@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 .container {
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 body {
@@ -19,7 +19,11 @@ body {
   overflow: hidden;
   margin: auto;
 }
+
 /* Estilos Navegación*/
+nav {
+  background-color: #1a237e;
+}
 .navbar-brand img {
   width: 45px;
   height: 40px;
@@ -34,6 +38,47 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: cover;
+}
+#portada1 {
+  background-image: url("../img/portada_2.jpg");
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: cover;
+}
+#portada3 {
+  background-image: url("../img/portada_3.jpg");
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: cover;
+}
+#portada4 {
+  background-image: url("../img/portada_4.jpg");
+  height: 700px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: cover;
+}
+
+#portada5 {
+  /* fallback for old browsers */
+  background: #1ac6ff;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to left,
+    rgba(26, 198, 255, 1),
+    rgba(26, 35, 126, 1)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to left,
+    rgba(26, 198, 255, 1),
+    rgba(26, 35, 126, 1)
+  );
+  height: 350px;
 }
 
 header .contenido-header {
@@ -70,6 +115,7 @@ header .contenido-header .texto-header {
 
 header .contenido-header .action-header {
   display: inline-block;
+  background-color: #2962ff;
   margin: auto;
   color: #fff;
   text-decoration: none;
@@ -79,13 +125,13 @@ header .contenido-header .action-header {
 }
 
 header .contenido-header .action-header:hover {
-  background: #15a4fa;
+  background: #1565c0;
   color: #fff;
 }
 
 main .quienes {
   background: #f0f3f5;
-  padding: 60px 0;
+  padding: 0px 0;
 }
 
 main .quienes .quienes-titulo {
@@ -157,207 +203,7 @@ main .portafolio .galeria .fotos img:hover {
   opacity: 0.6;
   cursor: pointer;
 }
-/* Estilos Footer */
 
-footer .contacto {
-  height: 600px;
-  background-image: url(../img/footer_1.jpg);
-  background-position: center;
-  padding: 60px 0;
-}
-
-footer .footer-textos {
-  text-align: center;
-  color: #fff;
-  font-size: 25px;
-}
-
-footer .footer-textos p {
-  font-size: 14px;
-  margin: 15px 0 30px 0;
-  color: #999999;
-}
-form {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  width: 70%;
-}
-footer .contacto input[type="text"],
-footer .contacto input[type="email"],
-footer .contacto textarea {
-  width: 100%;
-  margin: 5px 0;
-  padding: 15px 20px;
-  background: none;
-  border-radius: 5px;
-  color: rgb(204, 204, 204);
-  border: 2px solid rgba(204, 204, 204, 0.383);
-  font-family: "lato";
-  font-weight: 300;
-}
-
-footer .contacto textarea {
-  height: 150px;
-  max-height: 150px;
-  max-width: 100%;
-  min-width: 100%;
-  min-height: 150px;
-}
-.derecha {
-  display: flex;
-  justify-content: flex-end;
-}
-footer .contacto input[type="submit"] {
-  display: block;
-  width: 100px;
-  margin: 10px 0;
-  padding: 10px 15px;
-  background: none;
-  border: 1px solid #15a4fa;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  float: right;
-}
-footer .contacto input[type="submit"]:hover {
-  background: #15a4fa;
-  color: #fff;
-}
-
-.footer {
-  height: 200px;
-  background: #000;
-}
-/* Estilos seccion sucribirse  GRID*/
-
-.fas {
-  font-size: 1.2em;
-}
-.hero {
-  height: 83vh;
-  background-image: linear-gradient(
-      rgba(16, 16, 16, 0.8),
-      rgba(16, 16, 16, 0.9)
-    ),
-    url(../img/portada_1.jpg);
-  background-size: cover;
-  max-width: 100%;
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(8, 1fr);
-  position: relative;
-}
-.hero .info-content {
-  grid-column: 7 / 10;
-  grid-row: 3 / 7;
-  color: #fff;
-  z-index: 1;
-}
-.hero .info-content h3 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.8em;
-}
-.hero .info-content h1 {
-  font-weight: 900;
-  font-size: 3em;
-  color: #d62828;
-}
-.hero .info-content p {
-  font-family: "Montserrat", sans-serif;
-}
-.hero .info-content .btn {
-  font-size: 1em;
-  color: #fff;
-  background: none;
-  padding: 10px 20px;
-  border-radius: 30px;
-  border: 1px solid#EDCB54;
-  margin-top: 10px;
-}
-.hero .info-content .btn:hover {
-  background-color: #d62828;
-  color: #181818;
-}
-.radio-section {
-  display: grid;
-  height: 80px;
-  align-items: center;
-  background: rgb(1, 0, 13);
-  background: linear-gradient(
-    90deg,
-    rgba(1, 0, 13, 1) 5%,
-    rgba(7, 7, 75, 0.9640231092436975) 26%,
-    rgba(4, 4, 46, 1) 31%,
-    rgba(8, 9, 99, 1) 49%,
-    rgba(1, 11, 29, 1) 77%,
-    rgba(2, 10, 32, 1) 99%
-  );
-  color: #fff;
-  grid-template-areas: "listen-online follow-me social-network";
-}
-.radio-section .listen-online {
-  grid-template-areas: listen-online;
-  display: flex;
-  justify-content: center;
-  background: rgb(29, 22, 147);
-  background: linear-gradient(
-    90deg,
-    rgba(29, 22, 147, 1) 2%,
-    rgba(11, 11, 125, 0.9640231092436975) 26%,
-    rgba(8, 9, 99, 1) 49%,
-    rgba(1, 11, 29, 1) 77%,
-    rgba(2, 10, 32, 1) 99%
-  );
-
-  color: white;
-  padding: 26px;
-  height: 80px;
-}
-.radio-section .listen-online .fas {
-  margin-right: 15px;
-  font-size: 1.5em;
-}
-.radio-section h2 {
-  grid-template-areas: follow-me;
-  text-align: center;
-}
-.radio-section .social-network {
-  grid-template-areas: social-network;
-}
-.radio-section .social-network .fab {
-  font-size: 1.4em;
-  color: #3a86ff;
-  margin-right: 15px;
-  justify-content: flex-end;
-}
-
-@media only screen and (max-width: 600px) {
-  .hero .info-content {
-    z-index: 0;
-    grid-column: 2 / 9;
-    grid-row: 5 / 7;
-  }
-  .hero .info-content h1 {
-    font-size: 3.5em;
-    color: #3a86ff;
-  }
-  .hero .info-content h3 {
-    font-size: 1em;
-  }
-  .radio-section {
-    grid-template-areas: "listen-online social-network";
-  }
-  .radio-section h2 {
-    display: none;
-  }
-  .radio-section .social-network {
-    margin: 0 auto;
-  }
-  .radio-section .social-network .fab {
-    color: #3a86ff;
-  }
-}
 /*optimizando para diferentes dispositivos*/
 
 @media screen and (max-width: 760px) {
@@ -440,7 +286,7 @@ footer .contacto input[type="submit"]:hover {
   animation-name: efectazo;
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(0.17, 0.67, 0.8, 0.63);
-  animation-duration: 7s;
+  animation-duration: 10s;
   animation-delay: 0s;
   border-radius: 50%;
   color: #d62828;
@@ -453,4 +299,123 @@ footer .contacto input[type="submit"]:hover {
     transform: translateX(50%);
     background-color: none;
   }
+}
+/* Formulario */
+.forma {
+  margin: 80px;
+  background-color: yellowgreen;
+}
+/* Testimonios*/
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #f6d365;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(246, 211, 101, 1),
+    rgba(253, 160, 133, 1)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to right,
+    rgba(246, 211, 101, 1),
+    rgba(253, 160, 133, 1)
+  );
+}
+/* Formulario de Inscripción*/
+@media (min-width: 1025px) {
+  .h-custom {
+    height: 100vh !important;
+  }
+}
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+}
+.card-registration .select-arrow {
+  top: 13px;
+}
+
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #a1c4fd;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(161, 196, 253, 1),
+    rgba(194, 233, 251, 1)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to right,
+    rgba(161, 196, 253, 1),
+    rgba(194, 233, 251, 1)
+  );
+}
+
+.bg-indigo {
+  background-color: #4835d4;
+}
+@media (min-width: 992px) {
+  .card-registration-2 .bg-indigo {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .card-registration-2 .bg-indigo {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+}
+/* Registracion sección cursos online */
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+}
+.card-registration .select-arrow {
+  top: 13px;
+}
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #1ac6ff;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to left,
+    rgba(26, 198, 255, 1),
+    rgba(26, 35, 126, 1)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to left,
+    rgba(26, 198, 255, 1),
+    rgba(26, 35, 126, 1)
+  );
+}
+
+/* Formulario de contacto página contacto */
+div .card {
+  border-radius: 1rem;
+}
+img .img-fluid {
+  border-radius: 1rem 0 0 1rem;
+}
+div .d-flex i {
+  color: #ff6219;
+}
+.fw-normal {
+  letter-spacing: 1px;
+}
+.mb-5 a {
+  color: #393f81;
 }
