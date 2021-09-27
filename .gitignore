@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 # esto ignora toda la carpeta node_modules
 node_modules/
 wireframes_prototipos/
 .DS_Store
+=======
+#esto ignora la carpeta node_modules
+node_modules/
+#ignora la imagen portada_2jpg
+img/portada_2.jpg
+>>>>>>> d60a499d7b05189a57f569b927e67e30571c3110
